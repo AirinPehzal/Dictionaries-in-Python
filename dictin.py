@@ -5,7 +5,7 @@ for line in text:
     sentence = sentence+' '+line.replace('\n', ' ').replace('  ', ' ').replace('-', '').replace(',', '').replace(';', '').replace('\'', ' ').replace('?', '').replace('.', '')
 sentence = sentence.replace('  ', ' ')
 sentence = sentence.lstrip()
-print(sentence)
+
 words = sentence.split(' ')
 freq = {}
 for word in words:
